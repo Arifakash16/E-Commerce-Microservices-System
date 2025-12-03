@@ -8,33 +8,33 @@ It provides APIs for creating, updating, deleting, and retrieving product inform
 
 Key Features
 
-Add, update, delete, and fetch product details
+- Add, update, delete, and fetch product details
 
-Product categories, descriptions, images, prices
+- Product categories, descriptions, images, prices
 
-Built using .NET Core Web API
+- Built using .NET Core Web API
 
-Stores product data in MongoDB (or SQL depending on implementation)
+- Stores product data in MongoDB (or SQL depending on implementation)
 
 Endpoints (Example)
 
-GET /api/catalog/products
+- GET /api/catalog/products
 
-GET /api/catalog/products/{id}
+- GET /api/catalog/products/{id}
 
-POST /api/catalog/products
+- POST /api/catalog/products
 
-PUT /api/catalog/products/{id}
+- PUT /api/catalog/products/{id}
 
-DELETE /api/catalog/products/{id}
+- DELETE /api/catalog/products/{id}
 
 Technologies
 
-.NET Core Web API
+- .NET Core Web API
 
-MongoDB / SQL
+- MongoDB / SQL
 
-Clean Architecture
+- Clean Architecture
 
 2. Basket Service – README (Short Version)
 Basket Service
@@ -44,33 +44,33 @@ It manages cart items, quantities, total price calculation, and applies discount
 
 Key Features
 
-Add, update, and remove items from a user’s basket
+- Add, update, and remove items from a user’s basket
 
-Retrieve basket by customer username
+- Retrieve basket by customer username
 
-Apply discount codes (via Discount Service)
+- Apply discount codes (via Discount Service)
 
-Save/restore cart state
+- Save/restore cart state
 
-Built using .NET Core Web API
+- Built using .NET Core Web API
 
 Endpoints (Example)
 
-GET /api/basket/{username}
+- GET /api/basket/{username}
 
-POST /api/basket
+- POST /api/basket
 
-DELETE /api/basket/{username}
+- DELETE /api/basket/{username}
 
-POST /api/basket/apply-discount
+- POST /api/basket/apply-discount
 
 Technologies
 
-.NET Core Web API
+- .NET Core Web API
 
-Redis (commonly used for basket storage)
+- Redis (commonly used for basket storage)
 
-gRPC / HTTP integration with Discount Service
+- gRPC / HTTP integration with Discount Service
 
 3. Discount Service – README (Short Version)
 Discount Service
@@ -80,28 +80,28 @@ Basket Service calls this service to get discount values.
 
 Key Features
 
-Create, update, delete, and retrieve discount coupons
+- Create, update, delete, and retrieve discount coupons
 
-Apply coupon to user’s basket
+- Apply coupon to user’s basket
 
-Supports percentage or fixed-amount discounts
+- Supports percentage or fixed-amount discounts
 
-Built using .NET Core Web API or gRPC
+- Built using .NET Core Web API or gRPC
 
 Endpoints (Example)
 
-GET /api/discount/{code}
+- GET /api/discount/{code}
 
-POST /api/discount
+- POST /api/discount
 
-PUT /api/discount/{code}
+- PUT /api/discount/{code}
 
-DELETE /api/discount/{code}
+- DELETE /api/discount/{code}
 
 Technologies
 
-.NET Core Web API
+- .NET Core Web API
 
-PostgreSQL / SQL database
+- PostgreSQL / SQL database
 
-gRPC communication
+- gRPC communication
